@@ -2,31 +2,29 @@ package com.github.aaninab.petstore.pet;
 
 import com.github.aaninab.petstore.NamedEntity;
 
-import javax.annotation.CheckForNull;
-import javax.annotation.Nonnull;
 import java.util.Objects;
 
 public class Tag implements NamedEntity {
 
-    @CheckForNull
+
     private final Long id;
 
-    @Nonnull
+
     private final String name;
 
-    public Tag(@CheckForNull Long id, @Nonnull String name) {
+    public Tag(Long id, String name) {
         this.id = id;
         this.name = name;
     }
 
     @Override
-    @CheckForNull
+
     public Long getId() {
         return id;
     }
 
     @Override
-    @Nonnull
+
     public String getName() {
         return name;
     }

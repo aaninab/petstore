@@ -2,33 +2,30 @@ package com.github.aaninab.petstore.pet;
 
 import com.github.aaninab.petstore.NamedEntity;
 
-import javax.annotation.CheckForNull;
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Objects;
 
 public class Pet implements NamedEntity {
 
-    @CheckForNull
+
     private final Long id;
 
-    @Nonnull
+
     private final String name;
 
-    @CheckForNull
+
     private final Category category;
 
-    @Nonnull
+
     private final List<String> photoUrls;
 
-    @CheckForNull
+
     private final List<Tag> tags;
 
-    @CheckForNull
+
     private final PetStatus status;
 
-    public Pet(@Nullable Long id, @Nonnull String name, @Nullable Category category, @Nonnull List<String> photoUrls, @Nullable List<Tag> tags, @Nullable PetStatus status) {
+    public Pet(Long id, String name, Category category, List<String> photoUrls, List<Tag> tags, PetStatus status) {
         this.id = id;
         this.name = name;
         this.category = category;
@@ -38,33 +35,33 @@ public class Pet implements NamedEntity {
     }
 
     @Override
-    @CheckForNull
+
     public Long getId() {
         return id;
     }
 
     @Override
-    @Nonnull
+
     public String getName() {
         return name;
     }
 
-    @CheckForNull
+
     public Category getCategory() {
         return category;
     }
 
-    @Nonnull
+
     public List<String> getPhotoUrls() {
         return photoUrls;
     }
 
-    @CheckForNull
+
     public List<Tag> getTags() {
         return tags;
     }
 
-    @CheckForNull
+
     public PetStatus getStatus() {
         return status;
     }
