@@ -6,10 +6,7 @@ import java.util.Objects;
 
 public class Tag implements NamedEntity {
 
-
     private final Long id;
-
-
     private final String name;
 
     public Tag(Long id, String name) {
@@ -17,14 +14,12 @@ public class Tag implements NamedEntity {
         this.name = name;
     }
 
-    @Override
-
+    @Override //wegen interface
     public Long getId() {
         return id;
     }
 
     @Override
-
     public String getName() {
         return name;
     }
@@ -50,4 +45,5 @@ public class Tag implements NamedEntity {
                 ", name='" + name + '\'' +
                 '}';
     }
+
 }

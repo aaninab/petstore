@@ -6,10 +6,7 @@ import java.util.Objects;
 
 public class Category implements NamedEntity {
 
-
     private final Long id;
-
-
     private final String name;
 
     public Category(Long id, String name) {
@@ -18,13 +15,11 @@ public class Category implements NamedEntity {
     }
 
     @Override
-
     public Long getId() {
         return id;
     }
 
     @Override
-
     public String getName() {
         return name;
     }

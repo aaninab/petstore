@@ -7,22 +7,11 @@ import java.util.Objects;
 
 public class Pet implements NamedEntity {
 
-
     private final Long id;
-
-
     private final String name;
-
-
     private final Category category;
-
-
     private final List<String> photoUrls;
-
-
     private final List<Tag> tags;
-
-
     private final PetStatus status;
 
     public Pet(Long id, String name, Category category, List<String> photoUrls, List<Tag> tags, PetStatus status) {
@@ -35,13 +24,11 @@ public class Pet implements NamedEntity {
     }
 
     @Override
-
     public Long getId() {
         return id;
     }
 
     @Override
-
     public String getName() {
         return name;
     }
@@ -51,16 +38,13 @@ public class Pet implements NamedEntity {
         return category;
     }
 
-
     public List<String> getPhotoUrls() {
         return photoUrls;
     }
 
-
     public List<Tag> getTags() {
         return tags;
     }
-
 
     public PetStatus getStatus() {
         return status;
@@ -95,4 +79,5 @@ public class Pet implements NamedEntity {
                 ", status=" + status +
                 '}';
     }
+
 }
